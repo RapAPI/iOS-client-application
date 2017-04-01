@@ -1,0 +1,6 @@
+framework module Pods_ios_client_rap {
+  umbrella header "Pods-ios-client-rap-umbrella.h"
+
+  export *
+  module * { export * }
+}
