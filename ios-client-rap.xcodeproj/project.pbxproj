@@ -13,6 +13,8 @@
 		BBAF9FCD1E8FC22A00CB8DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF9FCB1E8FC22A00CB8DE0 /* Main.storyboard */; };
 		BBAF9FCF1E8FC22A00CB8DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAF9FCE1E8FC22A00CB8DE0 /* Assets.xcassets */; };
 		BBAF9FD21E8FC22A00CB8DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF9FD01E8FC22A00CB8DE0 /* LaunchScreen.storyboard */; };
+		BBAF9FDA1E8FCD9E00CB8DE0 /* AWSCognitoCredentialsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF9FD91E8FCD9E00CB8DE0 /* AWSCognitoCredentialsKeys.swift */; };
+		BBAF9FDC1E8FCEBC00CB8DE0 /* AWSPollyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF9FDB1E8FCEBC00CB8DE0 /* AWSPollyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BBAF9FCE1E8FC22A00CB8DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBAF9FD11E8FC22A00CB8DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBAF9FD31E8FC22A00CB8DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBAF9FD91E8FCD9E00CB8DE0 /* AWSCognitoCredentialsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSCognitoCredentialsKeys.swift; sourceTree = "<group>"; };
+		BBAF9FDB1E8FCEBC00CB8DE0 /* AWSPollyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSPollyManager.swift; sourceTree = "<group>"; };
 		D71EE761469F5E4432052950 /* Pods-ios-client-rap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-client-rap.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-client-rap/Pods-ios-client-rap.release.xcconfig"; sourceTree = "<group>"; };
 		D765CBCE135407EB90A79785 /* Pods_ios_client_rap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_client_rap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +71,8 @@
 				BBAF9FCE1E8FC22A00CB8DE0 /* Assets.xcassets */,
 				BBAF9FD01E8FC22A00CB8DE0 /* LaunchScreen.storyboard */,
 				BBAF9FD31E8FC22A00CB8DE0 /* Info.plist */,
+				BBAF9FD91E8FCD9E00CB8DE0 /* AWSCognitoCredentialsKeys.swift */,
+				BBAF9FDB1E8FCEBC00CB8DE0 /* AWSPollyManager.swift */,
 			);
 			path = "ios-client-rap";
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBAF9FDC1E8FCEBC00CB8DE0 /* AWSPollyManager.swift in Sources */,
 				BBAF9FCA1E8FC22900CB8DE0 /* ViewController.swift in Sources */,
 				BBAF9FC81E8FC22900CB8DE0 /* AppDelegate.swift in Sources */,
+				BBAF9FDA1E8FCD9E00CB8DE0 /* AWSCognitoCredentialsKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +389,7 @@
 				BBAF9FD81E8FC22A00CB8DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

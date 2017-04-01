@@ -7,34 +7,23 @@
 //
 
 import UIKit
-import AWSPolly
 import AVFoundation
 
 class ViewController: UIViewController {
 
     fileprivate let audioPlayer = AVPlayer()
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        AWSPollyManager.shared.buildSong(text: "hello world") { [weak self] url in
+            guard let url = url else {return}
+            self?.audioPlayer.replaceCurrentItem(with: AVPlayerItem(url: url as URL))
+            self?.audioPlayer.play()
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let credentialProvider = AWSCognitoCredentialsProvider(regionType: AWSRegionType.EUCentral1, identityPoolId: "")
-        let configuration = AWSServiceConfiguration(
-            region: AWSRegionType.EUCentral1,
-            credentialsProvider: credentialProvider)
-
-        AWSServiceManager.default().defaultServiceConfiguration = configuration
-
-        let input = AWSPollySynthesizeSpeechURLBuilderRequest()
-        input.text = "Sample text"
-        input.outputFormat = AWSPollyOutputFormat.mp3
-        input.voiceId = AWSPollyVoiceId.joanna
-        let builder = AWSPollySynthesizeSpeechURLBuilder.default().getPreSignedURL(input)
-
-        builder.continueWith { task in
-            guard let url = task.result else {return nil}
-            self.audioPlayer.replaceCurrentItem(with: AVPlayerItem(url: url as URL))
-            self.audioPlayer.play()
-            return nil
-        }
     }
 }
