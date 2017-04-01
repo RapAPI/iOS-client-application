@@ -5,6 +5,7 @@
 ## Build generated
 build/
 DerivedData/
+ios-client-rap/AWSCognitoCredentialsKeys.swift
 
 ## Various settings
 *.pbxuser
