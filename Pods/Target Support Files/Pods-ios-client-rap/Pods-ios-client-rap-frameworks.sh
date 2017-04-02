@@ -91,10 +91,20 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AWSCore/AWSCore.framework"
   install_framework "$BUILT_PRODUCTS_DIR/AWSPolly/AWSPolly.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AudioIndicatorBars/AudioIndicatorBars.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ChainableAnimations/ChainableAnimations.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SnapKit/SnapKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VSSpritz/VSSpritz.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VisualEffectView/VisualEffectView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AWSCore/AWSCore.framework"
   install_framework "$BUILT_PRODUCTS_DIR/AWSPolly/AWSPolly.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AudioIndicatorBars/AudioIndicatorBars.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ChainableAnimations/ChainableAnimations.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SnapKit/SnapKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VSSpritz/VSSpritz.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VisualEffectView/VisualEffectView.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -1,0 +1,6 @@
+framework module VSSpritz {
+  umbrella header "VSSpritz-umbrella.h"
+
+  export *
+  module * { export * }
+}
