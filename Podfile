@@ -6,4 +6,6 @@ target 'ios-client-rap' do
   pod 'SnapKit'
   pod 'ChainableAnimations', '~> 2.0'
   pod "VSSpritz"
+  pod 'Alamofire'
+  pod "libmuse"
 end

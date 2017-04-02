@@ -72,7 +72,7 @@ class AWSPollyManager {
 
     init() {
         input.outputFormat = AWSPollyOutputFormat.mp3
-        input.voiceId = AWSPollyVoiceId.joanna
+        input.voiceId = AWSPollyVoiceId.justin
     }
 
     func configure() {

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		43C08F4FB1CB52E338BC806B /* Pods_ios_client_rap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D765CBCE135407EB90A79785 /* Pods_ios_client_rap.framework */; };
+		BB33A0D31E90FDDD00FFCE29 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB33A0D21E90FDDD00FFCE29 /* CoreBluetooth.framework */; };
+		BB33A0DA1E91003000FFCE29 /* MuseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB33A0D91E91003000FFCE29 /* MuseManager.m */; };
+		BB33A0DC1E910CD100FFCE29 /* beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = BB33A0DB1E910CD100FFCE29 /* beat.wav */; };
 		BB40906A1E90AD2A00AF7582 /* beat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB4090671E90AD2A00AF7582 /* beat1.mp3 */; };
 		BB40906B1E90AD2A00AF7582 /* beat2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB4090681E90AD2A00AF7582 /* beat2.mp3 */; };
 		BB40906C1E90AD2A00AF7582 /* beat3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB4090691E90AD2A00AF7582 /* beat3.mp3 */; };
@@ -19,6 +22,7 @@
 		BBAF9FDA1E8FCD9E00CB8DE0 /* AWSCognitoCredentialsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF9FD91E8FCD9E00CB8DE0 /* AWSCognitoCredentialsKeys.swift */; };
 		BBAF9FDC1E8FCEBC00CB8DE0 /* AWSPollyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF9FDB1E8FCEBC00CB8DE0 /* AWSPollyManager.swift */; };
 		BBAF9FDE1E8FD12300CB8DE0 /* AWSConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBAF9FDD1E8FD12300CB8DE0 /* AWSConfiguration.plist */; };
+		BBDA72A81E90FC3900040CAD /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDA72A71E90FC3900040CAD /* libc++.1.tbd */; };
 		BBEA44231E8FE711009FDC81 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEA44221E8FE711009FDC81 /* AudioToolbox.framework */; };
 		BBEA44251E8FE729009FDC81 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEA44241E8FE729009FDC81 /* CoreMedia.framework */; };
 		BBEA444F1E8FE811009FDC81 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEA444E1E8FE811009FDC81 /* AVFoundation.framework */; };
@@ -30,8 +34,25 @@
 		BBEA44651E90116C009FDC81 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BBEA44641E90116C009FDC81 /* sound.mp3 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BBDA72A31E90FBEB00040CAD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0B7301B98225DDF2656F5A5A /* Pods-ios-client-rap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-client-rap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-client-rap/Pods-ios-client-rap.debug.xcconfig"; sourceTree = "<group>"; };
+		BB33A0D21E90FDDD00FFCE29 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		BB33A0D81E91003000FFCE29 /* MuseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuseManager.h; sourceTree = "<group>"; };
+		BB33A0D91E91003000FFCE29 /* MuseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuseManager.m; sourceTree = "<group>"; };
+		BB33A0DB1E910CD100FFCE29 /* beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beat.wav; sourceTree = "<group>"; };
 		BB4090671E90AD2A00AF7582 /* beat1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat1.mp3; sourceTree = "<group>"; };
 		BB4090681E90AD2A00AF7582 /* beat2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat2.mp3; sourceTree = "<group>"; };
 		BB4090691E90AD2A00AF7582 /* beat3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat3.mp3; sourceTree = "<group>"; };
@@ -45,6 +66,7 @@
 		BBAF9FD91E8FCD9E00CB8DE0 /* AWSCognitoCredentialsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSCognitoCredentialsKeys.swift; sourceTree = "<group>"; };
 		BBAF9FDB1E8FCEBC00CB8DE0 /* AWSPollyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSPollyManager.swift; sourceTree = "<group>"; };
 		BBAF9FDD1E8FD12300CB8DE0 /* AWSConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AWSConfiguration.plist; sourceTree = "<group>"; };
+		BBDA72A71E90FC3900040CAD /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		BBEA44221E8FE711009FDC81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BBEA44241E8FE729009FDC81 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		BBEA44281E8FE74D009FDC81 /* ios-client-rap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-client-rap-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -64,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB33A0D31E90FDDD00FFCE29 /* CoreBluetooth.framework in Frameworks */,
+				BBDA72A81E90FC3900040CAD /* libc++.1.tbd in Frameworks */,
 				BBEA445D1E8FF130009FDC81 /* SceneKit.framework in Frameworks */,
 				BBEA44511E8FE832009FDC81 /* MediaPlayer.framework in Frameworks */,
 				BBEA444F1E8FE811009FDC81 /* AVFoundation.framework in Frameworks */,
@@ -79,6 +103,7 @@
 		BB4090661E90AD1C00AF7582 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				BB33A0DB1E910CD100FFCE29 /* beat.wav */,
 				BB4090671E90AD2A00AF7582 /* beat1.mp3 */,
 				BB4090681E90AD2A00AF7582 /* beat2.mp3 */,
 				BB4090691E90AD2A00AF7582 /* beat3.mp3 */,
@@ -111,6 +136,8 @@
 				BBEA44641E90116C009FDC81 /* sound.mp3 */,
 				BBAF9FC71E8FC22900CB8DE0 /* AppDelegate.swift */,
 				BBAF9FC91E8FC22900CB8DE0 /* ViewController.swift */,
+				BB33A0D81E91003000FFCE29 /* MuseManager.h */,
+				BB33A0D91E91003000FFCE29 /* MuseManager.m */,
 				BBEA445E1E8FF284009FDC81 /* Grid.swift */,
 				BBEA44601E8FF2FA009FDC81 /* FrequencyBand.swift */,
 				BBEA44621E8FF30D009FDC81 /* UIColorExtensions.swift */,
@@ -129,6 +156,8 @@
 		EA52A3B84BEA2579F08F3D21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB33A0D21E90FDDD00FFCE29 /* CoreBluetooth.framework */,
+				BBDA72A71E90FC3900040CAD /* libc++.1.tbd */,
 				BBEA445C1E8FF130009FDC81 /* SceneKit.framework */,
 				BBEA44501E8FE832009FDC81 /* MediaPlayer.framework */,
 				BBEA444E1E8FE811009FDC81 /* AVFoundation.framework */,
@@ -161,6 +190,7 @@
 				BBAF9FC21E8FC22900CB8DE0 /* Resources */,
 				4A5027CFE1437EB454965BEC /* [CP] Embed Pods Frameworks */,
 				A3F632CC6E0FC44778222C06 /* [CP] Copy Pods Resources */,
+				BBDA72A31E90FBEB00040CAD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +247,7 @@
 				BBEA44651E90116C009FDC81 /* sound.mp3 in Resources */,
 				BBAF9FCF1E8FC22A00CB8DE0 /* Assets.xcassets in Resources */,
 				BB40906A1E90AD2A00AF7582 /* beat1.mp3 in Resources */,
+				BB33A0DC1E910CD100FFCE29 /* beat.wav in Resources */,
 				BB40906C1E90AD2A00AF7582 /* beat3.mp3 in Resources */,
 				BBAF9FCD1E8FC22A00CB8DE0 /* Main.storyboard in Resources */,
 				BBAF9FDE1E8FD12300CB8DE0 /* AWSConfiguration.plist in Resources */,
@@ -283,6 +314,7 @@
 				BBAF9FCA1E8FC22900CB8DE0 /* ViewController.swift in Sources */,
 				BBAF9FC81E8FC22900CB8DE0 /* AppDelegate.swift in Sources */,
 				BBEA445F1E8FF284009FDC81 /* Grid.swift in Sources */,
+				BB33A0DA1E91003000FFCE29 /* MuseManager.m in Sources */,
 				BBAF9FDA1E8FCD9E00CB8DE0 /* AWSCognitoCredentialsKeys.swift in Sources */,
 				BBEA44611E8FF2FA009FDC81 /* FrequencyBand.swift in Sources */,
 			);
@@ -412,6 +444,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 44Q2J6374R;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios-client-rap",
+				);
 				INFOPLIST_FILE = "ios-client-rap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(PROJECT_DIR)/Audio3DVisualizer/Frameworks/SuperPowered";
 				LIBRARY_SEARCH_PATHS = (
@@ -419,6 +456,26 @@
 					"$(PROJECT_DIR)/ios-client-rap",
 					"$(PROJECT_DIR)/SuperPowered",
 					"$(PROJECT_DIR)/Audio3DVisualizer/Frameworks/SuperPowered",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AWSCore\"",
+					"-framework",
+					"\"AWSPolly\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioIndicatorBars\"",
+					"-framework",
+					"\"ChainableAnimations\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"VSSpritz\"",
+					"-framework",
+					"\"VisualEffectView\"",
+					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.remirobert.ios-client-rap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,6 +492,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 44Q2J6374R;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios-client-rap",
+				);
 				INFOPLIST_FILE = "ios-client-rap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(PROJECT_DIR)/Audio3DVisualizer/Frameworks/SuperPowered";
 				LIBRARY_SEARCH_PATHS = (
@@ -442,6 +504,26 @@
 					"$(PROJECT_DIR)/ios-client-rap",
 					"$(PROJECT_DIR)/SuperPowered",
 					"$(PROJECT_DIR)/Audio3DVisualizer/Frameworks/SuperPowered",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AWSCore\"",
+					"-framework",
+					"\"AWSPolly\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioIndicatorBars\"",
+					"-framework",
+					"\"ChainableAnimations\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"VSSpritz\"",
+					"-framework",
+					"\"VisualEffectView\"",
+					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.remirobert.ios-client-rap";
 				PRODUCT_NAME = "$(TARGET_NAME)";

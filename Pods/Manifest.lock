@@ -1,30 +1,36 @@
 PODS:
+  - Alamofire (4.4.0)
   - AudioIndicatorBars (0.0.2)
   - AWSCore (2.5.2)
   - AWSPolly (2.5.2):
     - AWSCore (= 2.5.2)
   - ChainableAnimations (2.0.2)
+  - libmuse (1.2.1)
   - SnapKit (3.2.0)
   - VisualEffectView (2.0.6)
   - VSSpritz (0.1.3)
 
 DEPENDENCIES:
+  - Alamofire
   - AudioIndicatorBars
   - AWSPolly (~> 2.5.0)
   - ChainableAnimations (~> 2.0)
+  - libmuse
   - SnapKit
   - VisualEffectView
   - VSSpritz
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   AudioIndicatorBars: 10bf47c8422578dab5046e795a85a0f9b292d57d
   AWSCore: b2fe455c2c7d6653521238c5b0b0ddb67ec4f063
   AWSPolly: a87083d6ec5278a81f6aa222eb8ecea852e53027
   ChainableAnimations: c4f5988b9dd226b766997aa4812a56ab77c8ad40
+  libmuse: b62d3de615e9abc76ddafe56ce534aa1fbe86bb1
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   VisualEffectView: fbfa0b7c863170d138f7c4b1c38ce1e14fae4c3b
   VSSpritz: af78296851cab264e72187fe4896280e51ccd879
 
-PODFILE CHECKSUM: 698681eadce204e74f8c816e198d7f878bbe350e
+PODFILE CHECKSUM: ebac08bb1be11c024be6992e0d4398aa0ef0d12d
 
 COCOAPODS: 1.2.0
